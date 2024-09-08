@@ -3,13 +3,13 @@ A guide and template for building a Discord bot that connects to locally install
 
 # Requirements
 
-Python 3.8+
-Ollama (with models installed)
-Git
-Discord Developer Token
-discord.py library
-python-dotenv for environment variable management
-requests library to handle API calls
+- Python 3.8+
+- Ollama (with models installed)
+- Git
+- Discord Developer Token
+- discord.py library
+- python-dotenv for environment variable management
+- requests library to handle API calls
 
 
 Clone the repository:
@@ -25,12 +25,13 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
+Set up the environment variables:
+
 Install dependencies:
 
 ```
 pip install -r requirements.txt
 ```
-Set up the environment variables:
 
 Create a .env file in the root directory of the project.
 Add your Discord bot token and the Ollama API URL:
