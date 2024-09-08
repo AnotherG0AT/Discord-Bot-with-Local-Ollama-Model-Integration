@@ -15,8 +15,8 @@ requests library to handle API calls
 Clone the repository:
 
 ```
-git clone https://github.com/your-username/discord-bot-ollama-model-integration.git
-cd discord-bot-ollama-model-integration
+git clone https://github.com/AnotherG0AT/Discord-Bot-with-Local-Ollama-Model-Integration.git
+cd discord-bot-ollama-model-integration # and switch to the directory
 ```
 
 Create a virtual environment:
