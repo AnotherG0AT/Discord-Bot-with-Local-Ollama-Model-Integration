@@ -27,25 +27,48 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 Set up the environment variables:
 
-Install dependencies:
+ # Install dependencies:
 
 ```
 pip install -r requirements.txt
 ```
 
-Create a .env file in the root directory of the project.
-Add your Discord bot token and the Ollama API URL:
+# Make changes in the code
+- Right click on the bot.py file and click edit with [whichever app you use (ex:notepad) ]
+- Then go find 
+```
+# Your bot token
+DISCORD_TOKEN = 'your discord bot token'
 
 ```
-DISCORD_TOKEN=your-discord-bot-token
-OLLAMA_API_URL=http://localhost:11434
+- And replace the your discord bot token with your actual discord bot token from Discord Developer Portal.
+- You also have to replace
 ```
+# Function to get response from the Ollama model
+def get_ollama_response(prompt, model="your model id here"):
+```
+your model id here with your actual ollama model id (for example: phi3)
 
-Running the Bot
+# How to download ollama models?
+
+- Go to their official website: https://ollama.com/download/windows
+- Download ollama and install it.
+- Now open a Terminal/Command Promt and type
+```
+ollama pull [your model id]
+```
+- Then you can test the model by using
+```
+ollama run [your model id]
+```
+- You can find ollama model id's and what they do/what they are for from their library: https://ollama.com/library
+
+# Running the Bot
 
 Start the Ollama API: Ensure your local Ollama API is running on http://localhost:11434.
 
-Run the bot:
+# Run the bot:
+- open a terminal/cmd prompt on the directory where the repo is in and run
 ```
 python bot.py
 ```
@@ -60,8 +83,10 @@ Example
 Response: "The meaning of life is subjective and depends on individual values and beliefs..."
 ```
 
-Contributing
+# Contributing
 Feel free to submit issues or pull requests if you want to contribute to the project.
 
-License
+# If this project is helpful, please give a star to this repository!
+
+# License
 This project is licensed under the MIT License.
